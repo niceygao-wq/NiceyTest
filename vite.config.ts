@@ -22,3 +22,10 @@ export default defineConfig(({mode}) => {
     },
   };
 });
+import { defineConfig } from 'vite'
+// ... 其他导入
+
+export default defineConfig({
+  base: '/NiceyTest/', // 必须与您的 GitHub 仓库名完全一致
+  // ... 其他配置
+})
