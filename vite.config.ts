@@ -22,10 +22,11 @@ export default defineConfig(({mode}) => {
     },
   };
 });
+
 import { defineConfig } from 'vite'
-// ... 其他导入
+import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  base: '/NiceyTest/', // 必须与您的 GitHub 仓库名完全一致
-  // ... 其他配置
+  plugins: [react()],
+  base: '/NiceyTest/', // 必须添加这一行，注意前后都有斜杠
 })
